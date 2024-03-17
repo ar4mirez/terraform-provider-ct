@@ -8,7 +8,7 @@ all: build test vet fmt
 
 .PHONY: build
 build:
-	@go build -o $@ github.com/poseidon/terraform-provider-ct
+	@go build -o $@ github.com/ar4mirez/terraform-provider-ct
 
 .PHONY: test
 test:
@@ -53,7 +53,7 @@ _output/darwin-amd64/terraform-provider-ct: GOARGS = GOOS=darwin GOARCH=amd64
 _output/darwin-arm64/terraform-provider-ct: GOARGS = GOOS=darwin GOARCH=arm64
 _output/windows-amd64/terraform-provider-ct: GOARGS = GOOS=windows GOARCH=amd64
 _output/%/terraform-provider-ct:
-	$(GOARGS) go build -o $@ github.com/poseidon/terraform-provider-ct
+	$(GOARGS) go build -o $@ github.com/ar4mirez/terraform-provider-ct
 
 release-sign:
 	cd _output; sha256sum *.zip > terraform-provider-ct_$(SEMVER)_SHA256SUMS
