@@ -1,4 +1,4 @@
-package internal
+package ct
 
 import (
 	"testing"
@@ -7,7 +7,7 @@ import (
 )
 
 var testProviders = map[string]*schema.Provider{
-	"ct": Provider(),
+	"provider": Provider(),
 }
 
 func TestProvider(t *testing.T) {

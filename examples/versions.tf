@@ -6,7 +6,7 @@ terraform {
     ct = {
       source  = "poseidon/ct"
       version = "~> 0.13.0"
-      #source  = "terraform.localhost/poseidon/ct"
+      #source  = "terraform.localhost/poseidon/provider"
       #version = "0.12.0"
     }
   }

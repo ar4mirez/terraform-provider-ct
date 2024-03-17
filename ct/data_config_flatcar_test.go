@@ -1,4 +1,4 @@
-package internal
+package ct
 
 import (
 	"testing"

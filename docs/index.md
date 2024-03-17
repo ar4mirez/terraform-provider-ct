@@ -12,7 +12,7 @@ provider "ct" {}
 terraform {
   required_providers {
     ct = {
-      source  = "poseidon/ct"
+      source  = "poseidon/provider"
       version = "0.13.0"
     }
   }
